@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div>
+    <h1>Create New Review</h1>
+
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-dark">save review</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

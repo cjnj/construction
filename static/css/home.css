@@ -1,0 +1,69 @@
+/* phone */
+@media(max-width:767px){
+    html{
+        font-size: 10px;
+    }
+}
+
+/* medium screens */
+@media((max-width:1007px)){
+    html{
+        font-size: 13px;
+    }
+
+    
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-page-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.full-page-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the viewport without distortion */
+    z-index: -1; /* Ensures the image is behind the content */
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1; /* Ensures the content appears above the image */
+    color: white; /* Adjust text color for readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background to make text more readable */
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-img1 {
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.home {
+    text-align: center;
+}

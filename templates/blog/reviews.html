@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div>
+    <a class="btn btn-primary" href="{% url 'create' %}"> Create a New Post</a>
+</div>
+
+<div>
+    {% for record in reviews %}
+    <div>
+        <h5>{{record.title}}</h5>
+        <p>{{record.content}}</p>
+    </div>
+    {% endfor %}
+
+
+</div>
+
+
+
+
+
+
+{% endblock %}

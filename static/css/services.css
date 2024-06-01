@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+}
+
+.responsive-image {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+p {
+    text-align: center;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.btn {
+    display: block;
+    margin-top: 20px;
+}

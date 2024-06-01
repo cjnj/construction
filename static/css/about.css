@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.responsive-img {
+    max-width: 100%;
+}
+
+.about2 {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: bold;
+}
+
+.about2 p {
+    margin: 0;
+}
+
+
+/* phone */
+@media(max-width:767px){
+    html{
+        font-size: 10px;
+    }
+}
+
+/* medium screens */
+@media((max-width:1007px)){
+    html{
+        font-size: 13px;
+    }
+
+    
+}
+
+.about-img{
+    height: 800px;
+}

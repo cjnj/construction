@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static '/css/about.css' %}">
+<h1>Empire Co.</h1>
+    <div class="about">
+        
+        <img src="{% static 'img/aboutpage.jpg' %}" alt="About Us Image" class="responsive-img" class="about-img">
+        <div class="about2">
+            <h2>About Us</h2>
+            <p>From Humble Beginnings to Industry Leaders
+                Our story begins in the bustling heart of New York City, where a group of determined day laborers laid the foundation for what would become a leading construction company. Fueled by hard work, dedication, and a shared dream, these individuals turned their vision into reality, transforming the city's skyline one project at a time.
+                
+                The Genesis of Our Journey
+                In the early 1990s, a small group of day laborers, brought together by their common struggles and aspirations, decided to pool their talents and resources. With little more than their tools, their skills, and an unshakeable belief in their potential, they took on their first independent project: a modest renovation of a local community center. This project, while small, was the catalyst for their entrepreneurial journey, proving that together they could achieve much more than they ever could individually.
+                
+                Building a Reputation, Brick by Brick
+                As word spread of their exceptional craftsmanship and unwavering commitment to quality, the group's reputation began to grow. They soon secured more projects, each one bigger and more complex than the last. With every new challenge, they refined their skills, broadened their expertise, and built a team of like-minded professionals who shared their values and vision.
+                
+                Expansion and Innovation
+                By the early 2000s, the company had expanded beyond small renovations and repairs to taking on significant residential and commercial projects. Embracing innovative construction techniques and sustainable building practices, they stayed ahead of industry trends and set new standards for excellence.
+            </p>
+        </div>
+    </div>
+    {% endblock %}
+    <script src="{% static '/js/adjustFontSize.js' %}"></script>

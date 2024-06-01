@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static '/css/services.css' %}"
+
+
+
+<h1> Here at Empire Co. we offer every level of construction!</h2>
+
+<div class="content-section"> 
+    <h2>New Construction</h2>
+    <img src="{% static 'img/newconstruction.jpg' %}" class="responsive-image">
+    <p>Welcome to Empire Co., your trusted partner in new construction. With years of experience building high-quality structures in New York City, we take pride in our expertise and commitment to excellence. Our skilled team has successfully completed numerous projects, from residential buildings to commercial complexes, all while adhering to the highest standards of safety and quality.
+
+        At Empire Co., we understand the importance of navigating the complexities of construction permits and regulations. That's why we ensure all our projects are fully compliant with city and state requirements. Our team works diligently to obtain the necessary permits, allowing us to deliver timely and efficient results without compromising on compliance.
+        
+        Choose Empire Co. for your next construction project and experience the dedication, professionalism, and expertise that sets us apart. Let's build higher, together!</p>
+    <button class="btn btn-primary">Your New Construction</button>
+</div>
+
+<div class="content-section"> 
+    <h2>Renovations</h2>
+    <img src="{% static 'img/renovationprojects1.jpg' %}" class="responsive-image">
+    <p>At Empire Co., we pride ourselves on our dedication to restoring and modernizing properties, no matter the challenge. With a deep respect for history and a passion for innovation, our experienced team has successfully revitalized numerous historic buildings, preserving their legacy while enhancing their functionality and appeal.
+
+        Our portfolio includes several notable historic restorations, each completed with meticulous attention to detail and a commitment to excellence. Whether it's a landmark structure or a cherished family home, Empire Co. has the expertise and determination to bring any property back to its former glory while seamlessly integrating modern amenities.
+        
+        Choose Empire Co. for your restoration and modernization projects, and experience our unwavering commitment to quality and craftsmanship. Let's preserve the past and build a brighter future together.</p>
+    <button class="btn btn-primary">Your Renovation Project</button>
+</div>
+
+<div class="content-section"> 
+    <h2>Demolition</h2>
+    <img src="{% static 'img/demolition1.jpg' %}" class="responsive-image">
+    <p>At Empire Co., we understand that "What goes up must come down," and we excel in bringing buildings down safely and efficiently. Our team is highly experienced in demolition, adhering strictly to all city and state safety regulations. With a focus on safety and precision, we ensure that every demolition project is executed flawlessly, minimizing risks and ensuring the safety of our crew and the surrounding area.
+
+        Trust Empire Co. for all your demolition needs, where we combine expertise, safety, and reliability to get the job done right.</p>
+    <button class="btn btn-primary">Your Demolition Project</button>
+</div>
+
+{% endblock %}
