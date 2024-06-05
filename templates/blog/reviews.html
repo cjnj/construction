@@ -10,7 +10,7 @@
 <div>
     {% for record in reviews %}
     <div>
-        <h5>{{record.title}}</h5>
+        <h5><a href="{% url 'detail' record.id %}">{{record.title}}</a></h5>
         <p>{{record.content}}</p>
     </div>
     {% endfor %}

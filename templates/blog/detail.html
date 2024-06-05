@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="detail">
+   <h1>{{ review.title }}</h1>
+   <label>{{review.created}} </label>
+
+    <p>
+        {{ review.content }}
+    </p>
+</div>
+
+<div>
+    <a class="btn btn-primary" href="{% url 'reviews' %}"> Reviews</a>
+</div>
+
+{% endblock %}

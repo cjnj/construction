@@ -1,7 +1,7 @@
 from typing import Any
 from django.db.models.query import QuerySet
 from django.shortcuts import render
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, ListView, DetailView
 from .models import Review
 from .forms import CreateForm
 from django.urls import reverse
@@ -19,6 +19,9 @@ def contact(request):
 
 def services(request):
     return render(request, 'blog/services.html')
+
+def pastprojects(request):
+    return render(request, 'blog/pastprojects.html')
 
 
 
@@ -41,3 +44,12 @@ class ListReviews(ListView):
     
     def get_queryset(self):
         return Review.objects.all()
+    
+    
+class PostDetail(DetailView):
+    model = Review
+    template_name = "blog/detail.html"
+    context_object_name = 'review'
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        return queryset

@@ -12,7 +12,8 @@ body {
 }
 
 .responsive-img {
-    max-width: 100%;
+
+    height: 1200px;
 }
 
 .about2 {
@@ -29,21 +30,21 @@ body {
 
 
 /* phone */
-@media(max-width:767px){
-    html{
+@media(max-width:767px) {
+    html {
         font-size: 10px;
     }
 }
 
 /* medium screens */
-@media((max-width:1007px)){
-    html{
+@media((max-width:1007px)) {
+    html {
         font-size: 13px;
     }
 
-    
+
 }
 
-.about-img{
+.about-img {
     height: 800px;
 }
