@@ -19,7 +19,7 @@ h1, h2 {
     align-items: center;
 }
 
-.responsive-image {
+/* .responsive-image {
     display: block;
     margin: 0 auto 20px auto;
     width: 100%;
@@ -27,7 +27,7 @@ h1, h2 {
     height: auto;
     border-radius: 10px;
     
-}
+} */
 
 p {
     text-align: center;

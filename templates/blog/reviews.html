@@ -3,13 +3,13 @@
 
 {% block content %}
 
-<div>
+<div class="content-section">
     <a class="btn btn-primary" href="{% url 'create' %}"> Create a New Post</a>
 </div>
 
-<div>
+<div class="content-section">
     {% for record in reviews %}
-    <div>
+    <div class="content-section">
         <h5><a href="{% url 'detail' record.id %}">{{record.title}}</a></h5>
         <p>{{record.content}}</p>
     </div>

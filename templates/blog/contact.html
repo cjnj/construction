@@ -1,23 +1,25 @@
 {% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link rel="stylesheet" href="{% static 'home.css' %}">
-</head>
-<body>
-    <h1>Empire Co.</h1>
+
     {% block content %}
-    <div >
-        
-        <div >
-            <h2>Empire Co. build higher!</h2>
-            
-        </div>
+    
+    <div class="contact">
+        <img src="{% static 'img/contactpage.jpg' %}">
+        <div>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-linkedin"></i>
+    `   </div>
     </div>
+
+
+
+
+    
+
+    
+
+
     {% endblock %}
 </body>
 </html>
