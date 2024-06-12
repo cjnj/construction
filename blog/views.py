@@ -23,6 +23,15 @@ def services(request):
 def pastprojects(request):
     return render(request, 'blog/pastprojects.html')
 
+def demolitionform(request):
+    return render(request, 'blog/demolitionform.html')
+
+def newconform(request):
+    return render(request, 'blog/newconform.html')
+
+def renovateform(request):
+    return render(request, 'blog/renovateform.html')
+
 
 
 # create/ list
