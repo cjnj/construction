@@ -3,24 +3,23 @@
 
 {% block content %}
 
-<div class="content-section">
-    <a class="btn btn-primary" href="{% url 'create' %}"> Create a New Post</a>
-</div>
-
-<div class="content-section">
-    {% for record in reviews %}
-    <div class="content-section">
-        <h5><a href="{% url 'detail' record.id %}">{{record.title}}</a></h5>
-        <p>{{record.content}}</p>
+<div class="container mt-4">
+    <div class="text-center mb-4">
+        <a class="btn btn-primary" href="{% url 'create' %}">Create a New Post</a>
     </div>
-    {% endfor %}
 
-
+    <div class="row">
+        {% for record in reviews %}
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{% url 'detail' record.id %}">{{record.title}}</a></h5>
+                    <p class="card-text">{{record.content}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
-
-
-
-
-
 
 {% endblock %}

@@ -2,18 +2,17 @@
 {% load static %}
 
 {% block content %}
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title text-center">{{ review.title }}</h1>
+            <h6 class="card-subtitle mb-2 text-muted text-center">{{ review.created }}</h6>
+            <p class="card-text">{{ review.content }}</p>
+        </div>
+    </div>
 
-<div class="detail">
-   <h1>{{ review.title }}</h1>
-   <label>{{review.created}} </label>
-
-    <p>
-        {{ review.content }}
-    </p>
+    <div class="text-center mt-4">
+        <a class="btn btn-primary" href="{% url 'reviews' %}">Back to Reviews</a>
+    </div>
 </div>
-
-<div>
-    <a class="btn btn-primary" href="{% url 'reviews' %}"> Reviews</a>
-</div>
-
 {% endblock %}

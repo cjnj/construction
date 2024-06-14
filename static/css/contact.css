@@ -1,3 +1,4 @@
-.contact{
-    align-items: center;
+.image-resize {
+    width: 50%; /* or any desired width */
+    height: auto; /* maintain aspect ratio */
 }

@@ -2,26 +2,24 @@
 {% load static %}
 
 {% block content %}
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title text-center">Create New Review</h1>
 
-
-
-<div>
-    <h1>Create New Review</h1>
-
-    <form method="post" action="">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-dark">save review</button>
-    </form>
+            <form method="post" action="">
+                {% csrf_token %}
+                <div class="mb-3">
+                    {{ form.title.label_tag }}
+                    {{ form.title }}
+                </div>
+                <div class="mb-3">
+                    {{ form.content.label_tag }}
+                    {{ form.content }}
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Save Review</button>
+            </form>
+        </div>
+    </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 {% endblock %}

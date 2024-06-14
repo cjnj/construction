@@ -6,23 +6,35 @@
 
 {% block content %}
 
+<h1>Renovation Project</h1>
 
 
 <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+  <label for="exampleFormControlInput1" class="form-label">Name</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Email Adress</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="name@example.com"></textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Company</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Your Bussines"></textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Location of Project</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Street,City,State,Zip"></textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Scope of work</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="What is it your looking to get done?"></textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Desired Buddget</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"  placeholder="$"></textarea>
+</div>
 
-
-
+<a href="{% url 'services' %}" class="btn btn-primary">Submit</a>
 
 
 
