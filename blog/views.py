@@ -32,6 +32,9 @@ def newconform(request):
 def renovateform(request):
     return render(request, 'blog/renovateform.html')
 
+def futureprojects(request):
+    return render(request, 'blog/futureprojects.html')
+
 
 
 # create/ list

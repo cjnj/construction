@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home, about, contact, services, pastprojects, demolitionform, newconform, renovateform
+from .views import home, about, contact, services, pastprojects, demolitionform, newconform, renovateform, futureprojects
 from .views import CreateReviewView, ListReviews, PostDetail
 
 
@@ -15,5 +15,6 @@ urlpatterns = [
     path('demolitionform', demolitionform, name='demolitionform'),
     path('newconform', newconform, name='newconform'),
     path('renovateform', renovateform, name='renovateform'),
+    path('futureprojects', futureprojects, name='futureprojects'),
 
 ]

@@ -1,4 +1,4 @@
 .image-resize {
-    width: 50%; /* or any desired width */
-    height: auto; /* maintain aspect ratio */
+    width: 500px; 
+    height: auto;
 }
