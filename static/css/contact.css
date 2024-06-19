@@ -1,4 +1,25 @@
-.image-resize {
-    width: 500px; 
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+.img-fluid {
+    max-width: 100%;
     height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fs-2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.gap-3 {
+    gap: 1rem;
 }

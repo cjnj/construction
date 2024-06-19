@@ -1,45 +1,48 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
-
-
 {% block content %}
 
-<h1>Demolition Project</h1>
+<link rel="stylesheet" href="{% static 'css/demolitionform.css' %}">
 
+<div class="container my-5 form-container">
+    <h1 class="text-center mb-4">Demolition Project</h1>
 
-<div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Name</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Email Adress</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="name@example.com"></textarea>
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Company</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Your Bussines"></textarea>
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Location of Project</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Street,City,State,Zip"></textarea>
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Scope of work</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="What is it your looking to get done?"></textarea>
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Desired Buddget</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"  placeholder="$"></textarea>
-  </div>
+    <form>
+        <div class="mb-2">
+            <label for="nameInput" class="form-label">Name</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
+        </div>
 
-<a href="{% url 'services' %}" class="btn btn-primary">Submit</a>
+        <div class="mb-2">
+            <label for="emailInput" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        </div>
 
+        <div class="mb-2">
+            <label for="companyInput" class="form-label">Company</label>
+            <input type="text" class="form-control" id="companyInput" placeholder="Your Business">
+        </div>
 
+        <div class="mb-2">
+            <label for="locationInput" class="form-label">Location of Project</label>
+            <textarea class="form-control" id="locationInput" rows="2" placeholder="Street, City, State, Zip"></textarea>
+        </div>
 
+        <div class="mb-2">
+            <label for="scopeInput" class="form-label">Scope of Work</label>
+            <textarea class="form-control" id="scopeInput" rows="3" placeholder="What are you looking to get done?"></textarea>
+        </div>
 
+        <div class="mb-2">
+            <label for="budgetInput" class="form-label">Desired Budget</label>
+            <input type="text" class="form-control" id="budgetInput" placeholder="$">
+        </div>
 
-
+        <div class="text-center">
+            <a href="{% url 'services' %}" class="btn btn-primary">Submit</a>
+        </div>
+    </form>
+</div>
 
 {% endblock %}
