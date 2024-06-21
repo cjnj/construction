@@ -2,45 +2,48 @@
 {% load static %}
 
 {% block content %}
+
+<script src="{% static '/js/contact.js' %}"></script>
+
 <div class="container">
     <div class="text-center mb-5">
         <img src="{% static 'img/contactpage.jpg' %}" class="img-fluid rounded shadow-sm" alt="Contact Image">
         <h1 class="my-4">Contact Us</h1>
 
 
-        <form>
+        <form id="emailForm">
             <div class="mb-2">
                 <label for="nameInput" class="form-label">Name</label>
-                <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
+                <input type="text" class="form-control" id="nameInput" placeholder="Your Name" name="name">
             </div>
           
             <div class="mb-2">
                 <label for="emailInput" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" name="email">
             </div>
           
             <div class="mb-2">
                 <label for="companyInput" class="form-label">Company</label>
-                <input type="text" class="form-control" id="companyInput" placeholder="Your Business">
+                <input type="text" class="form-control" id="companyInput" placeholder="Your Business" name="company">
             </div>
           
             <div class="mb-2">
                 <label for="locationInput" class="form-label">Location of Project</label>
-                <textarea class="form-control" id="locationInput" rows="2" placeholder="Street, City, State, Zip"></textarea>
+                <textarea class="form-control" id="locationInput" rows="2" placeholder="Street, City, State, Zip" name="location"></textarea>
             </div>
           
             <div class="mb-2">
                 <label for="scopeInput" class="form-label">Scope of Work</label>
-                <textarea class="form-control" id="scopeInput" rows="3" placeholder="What are you looking to get done?"></textarea>
+                <textarea class="form-control" id="scopeInput" rows="3" placeholder="What are you looking to get done?" name="scope"></textarea>
             </div>
           
             <div class="mb-2">
                 <label for="budgetInput" class="form-label">Desired Budget</label>
-                <input type="text" class="form-control" id="budgetInput" placeholder="$">
+                <input type="text" class="form-control" id="budgetInput" placeholder="$" name="budget">
             </div>
           
             <div class="text-center">
-                <a href="#" class="btn btn-primary">Submit</a>
+                <button class="btn btn-primary">Submit</button>
             </div>
           </form>
 
